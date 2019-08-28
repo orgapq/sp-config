@@ -1,6 +1,11 @@
 spring:
   application:
     name: item-service
+  rabbitmq:
+    host: 192.168.161.131
+    port: 5672
+    username: admin
+    password: admin
     
 #server:
 #  port: 8001
@@ -8,7 +13,7 @@ spring:
 eureka:
   client:
     service-url:
-    #结合云服务才能设置其他选项
+    #缁撳悎浜戞湇鍔℃墠鑳借缃叾浠栭�夐」
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2001/eureka
 ---
 spring:
